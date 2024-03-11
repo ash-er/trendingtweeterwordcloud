@@ -1,0 +1,6 @@
+flask
+numpy
+bs4
+playwright
+re
+mysql-connector-python
