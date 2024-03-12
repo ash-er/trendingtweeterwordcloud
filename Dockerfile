@@ -5,11 +5,9 @@ FROM python:3.10
 WORKDIR /app
 
 # Copy the requirements file into the container at /app
-# COPY requirements.txt /app/
-COPY Automation.py /app/
-COPY templates /app/templates
-COPY Default_WA_personal_my /app/Default_WA_personal_my
-COPY req.txt /app/req.txt
+COPY requirements.txt /app/
+COPY TwitterTrendingAPI.py /app/
+COPY Default_Twitter_Trending /app/Default_Twitter_Trending
 
 # Install any dependencies
 RUN apt-get update && \
